@@ -14,7 +14,7 @@ spec:
         app: echo-server
     spec:
       containers:
-        - image: host.docker.internal:5001/echo-server:v1.0.0
+        - image: localhost:5001/echo-server:v1.0.0
           name: echo-server
           ports:
             - name: http
