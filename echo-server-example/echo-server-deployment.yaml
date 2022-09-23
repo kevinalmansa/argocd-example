@@ -14,9 +14,9 @@ spec:
         app: echo-server
     spec:
       containers:
-      - image: localhost:5001/echo-server:latest
-        name: echo-server
-        ports:
-        - name: http
-          containerPort: 8080
-          protocol: TCP
+        - image: host.docker.internal:5001/echo-server:v1.0.0
+          name: echo-server
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
